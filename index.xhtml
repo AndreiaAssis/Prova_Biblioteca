@@ -76,6 +76,9 @@ itemStyle="width:200px" >
 <p:gmap center="41.381542, 2.122893" zoom="15" type="hybrid" style="width:600px;height:400px" />
 <p:gmap center="41.381542, 2.122893" zoom="15" type="hybrid" style="width:600px;height:400px" model="#{mapBean.model}"/>
 
+<p:commandButton value="Export as PDF" ajax="false" >
+<p:dataExporter type="pdf" target="tableId" fileName="livros"/>
+</p:commandButton>
 
 </html>
 
